@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida+ Saúde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vida+ Saúde</h1>
+        <p>Monitore seus passos e hidratação diariamente!</p>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Registrar Dados</h2>
+            <form id="health-form">
+                <label for="steps">Passos do dia:</label>
+                <input type="number" id="steps" placeholder="Ex: 5000" required>
+                <label for="water">Hidratação (litros):</label>
+                <input type="number" id="water" step="0.1" placeholder="Ex: 2.5" required>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+        <section class="data-section">
+            <h2>Resumo Diário</h2>
+            <p><strong>Passos:</strong> <span id="steps-summary">0</span></p>
+            <p><strong>Hidratação:</strong> <span id="water-summary">0</span> litros</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vida+ Saúde. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
